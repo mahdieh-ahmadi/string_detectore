@@ -25,7 +25,6 @@ module string_detectore_mode1(
     output reg [3:0] N
     );
 	 
-	 reg start;
 	 reg [3:0] s;
 	 reg [4:0] counter;
 	 
