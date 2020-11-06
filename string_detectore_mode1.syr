@@ -1,0 +1,391 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: string_detectore_mode1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "string_detectore_mode1.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "string_detectore_mode1"
+Output Format                      : NGC
+Target Device                      : xc6slx4-3-tqg144
+
+---- Source Options
+Top Module Name                    : string_detectore_mode1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" into library work
+Parsing module <string_detectore_mode1>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <string_detectore_mode1>.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 46: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 56: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <string_detectore_mode1>.
+    Related source file is "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v".
+    Found 5-bit register for signal <counter>.
+    Found 4-bit register for signal <N>.
+    Found 4-bit register for signal <s>.
+    Found 5-bit adder for signal <counter[4]_GND_1_o_add_3_OUT> created at line 46.
+    Found 4-bit adder for signal <N[3]_GND_1_o_add_5_OUT> created at line 48.
+    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_3_o> created at line 41
+    Found 4-bit comparator not equal for signal <string1[3]_s[3]_equal_5_o> created at line 48
+    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_11_o> created at line 51
+    Found 5-bit comparator greater for signal <PWR_1_o_counter[4]_LessThan_12_o> created at line 51
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <string_detectore_mode1> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 1
+# Registers                                            : 3
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+# Comparators                                          : 4
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator greater                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <string_detectore_mode1>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <N>: 1 register on signal <N>.
+Unit <string_detectore_mode1> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 4
+ 4-bit comparator not equal                            : 1
+ 5-bit comparator greater                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <string_detectore_mode1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block string_detectore_mode1, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : string_detectore_mode1.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 13
+#      INV                         : 1
+#      LUT2                        : 2
+#      LUT3                        : 2
+#      LUT4                        : 3
+#      LUT5                        : 3
+#      LUT6                        : 2
+# FlipFlops/Latches                : 13
+#      FDE                         : 4
+#      FDRE                        : 9
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 5
+#      OBUF                        : 4
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx4tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              13  out of   4800     0%  
+ Number of Slice LUTs:                   13  out of   2400     0%  
+    Number used as Logic:                13  out of   2400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     15
+   Number with an unused Flip Flop:       2  out of     15    13%  
+   Number with an unused LUT:             2  out of     15    13%  
+   Number of fully used LUT-FF pairs:    11  out of     15    73%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 13    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.936ns (Maximum Frequency: 340.565MHz)
+   Minimum input arrival time before clock: 3.474ns
+   Maximum output required time after clock: 3.732ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.936ns (frequency: 340.565MHz)
+  Total number of paths / destination ports: 128 / 34
+-------------------------------------------------------------------------
+Delay:               2.936ns (Levels of Logic = 1)
+  Source:            counter_4 (FF)
+  Destination:       N_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_4 to N_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             4   0.447   1.028  counter_4 (counter_4)
+     LUT5:I0->O            9   0.203   0.829  GND_1_o_GND_1_o_equal_16_o<4>1 (GND_1_o_GND_1_o_equal_16_o)
+     FDRE:R                    0.430          N_0
+    ----------------------------------------
+    Total                      2.936ns (1.080ns logic, 1.856ns route)
+                                       (36.8% logic, 63.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 30 / 18
+-------------------------------------------------------------------------
+Offset:              3.474ns (Levels of Logic = 2)
+  Source:            string2 (PAD)
+  Destination:       s_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: string2 to s_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.898  string2_IBUF (string2_IBUF)
+     LUT4:I0->O            9   0.203   0.829  _n0048_inv1 (_n0048_inv)
+     FDE:CE                    0.322          s_0
+    ----------------------------------------
+    Total                      3.474ns (1.747ns logic, 1.727ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              3.732ns (Levels of Logic = 1)
+  Source:            N_0 (FF)
+  Destination:       N<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: N_0 to N<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.447   0.714  N_0 (N_0)
+     OBUF:I->O                 2.571          N_0_OBUF (N<0>)
+    ----------------------------------------
+    Total                      3.732ns (3.018ns logic, 0.714ns route)
+                                       (80.9% logic, 19.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.936|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.08 secs
+ 
+--> 
+
+Total memory usage is 4494080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
