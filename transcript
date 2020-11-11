@@ -15,46 +15,37 @@
 # do {test_string_detectore_mode2.fdo}
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 13:46:35 on Nov 06,2020
+# Start time: 17:52:36 on Nov 09,2020
 # vlog -reportprogress 300 string_detectore_mode2.v 
 # -- Compiling module string_detectore_mode2
 # 
 # Top level modules:
 # 	string_detectore_mode2
-# End time: 13:46:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 17:52:36 on Nov 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 13:46:35 on Nov 06,2020
+# Start time: 17:52:36 on Nov 09,2020
 # vlog -reportprogress 300 test_string_detectore_mode2.v 
 # -- Compiling module test_string_detectore_mode2
 # 
 # Top level modules:
 # 	test_string_detectore_mode2
-# End time: 13:46:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 17:52:36 on Nov 09,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 13:46:35 on Nov 06,2020
+# Start time: 17:52:36 on Nov 09,2020
 # vlog -reportprogress 300 C:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 13:46:35 on Nov 06,2020, Elapsed time: 0:00:00
+# End time: 17:52:37 on Nov 09,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vsim -voptargs=""+acc"" -t 1ps -L xilinxcorelib_ver -L unisims_ver -L unimacro_ver -L secureip -lib work work.test_string_detectore_mode2 glbl 
-# Start time: 13:46:35 on Nov 06,2020
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Start time: 17:52:37 on Nov 09,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # Loading work.test_string_detectore_mode2(fast)
 # Loading work.string_detectore_mode2(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: mahdie  Hostname: DESKTOP-RBQDBFC  ProcessID: 4640
-#           Attempting to use alternate WLF file "./wlftmqwi3i".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmqwi3i
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-run
-# End time: 13:46:59 on Nov 06,2020, Elapsed time: 0:00:24
-# Errors: 0, Warnings: 2
+# End time: 17:52:43 on Nov 09,2020, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

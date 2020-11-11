@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: string_detectore_mode1.prj
@@ -113,9 +113,9 @@ Parsing module <string_detectore_mode1>.
 =========================================================================
 
 Elaborating module <string_detectore_mode1>.
-WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 46: Result of 6-bit expression is truncated to fit in 5-bit target.
-WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
-WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 56: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 45: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 47: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\university\3991\fpga\homeworks\string_detectore\string_detectore_mode1.v" Line 55: Result of 6-bit expression is truncated to fit in 5-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -126,12 +126,12 @@ Synthesizing Unit <string_detectore_mode1>.
     Found 5-bit register for signal <counter>.
     Found 4-bit register for signal <N>.
     Found 4-bit register for signal <s>.
-    Found 5-bit adder for signal <counter[4]_GND_1_o_add_3_OUT> created at line 46.
-    Found 4-bit adder for signal <N[3]_GND_1_o_add_5_OUT> created at line 48.
-    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_3_o> created at line 41
-    Found 4-bit comparator not equal for signal <string1[3]_s[3]_equal_5_o> created at line 48
-    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_11_o> created at line 51
-    Found 5-bit comparator greater for signal <PWR_1_o_counter[4]_LessThan_12_o> created at line 51
+    Found 5-bit adder for signal <counter[4]_GND_1_o_add_3_OUT> created at line 45.
+    Found 4-bit adder for signal <N[3]_GND_1_o_add_5_OUT> created at line 47.
+    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_3_o> created at line 40
+    Found 4-bit comparator not equal for signal <string1[3]_s[3]_equal_5_o> created at line 47
+    Found 5-bit comparator greater for signal <counter[4]_PWR_1_o_LessThan_11_o> created at line 50
+    Found 5-bit comparator greater for signal <PWR_1_o_counter[4]_LessThan_12_o> created at line 50
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  13 D-type flip-flop(s).
@@ -378,8 +378,8 @@ clk            |    2.936|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.08 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.42 secs
  
 --> 
 
